@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 70px 70px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    height: 600px;
+    position: relative;
+}
+
+.card h1 , .card p {
+    color: white;
+    padding-top: 10px;
+    opacity: 1;
+}
+
+.card img{
+    width: 200px;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: 0.5s ease;
+}
+
+.gather-img-socials{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.socials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+}
+
+.gather-img-socials:hover .socials{
+    gap: 20px;
+}
+
+.fa-youtube , .fa-instagram ,.fa-facebook {
+    transition: 0.5s ease;
+}
+
+.socials i{
+    color: white;
+}
+
+.fa-brands{
+    border: 1px solid rgb(119, 21, 211);
+    padding: 10px ;
+    border-radius: 10px;
+}
+
+.fa-facebook:hover{
+    color: #4267B2;
+}
+
+.fa-youtube:hover{
+    color: #c4302b;
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.controls{
+    padding: 12px 22px;
+    margin-top: 25px ;
+    border: 1px solid white;
+}
+
+.controls i{
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+#waveform{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.fa-play , .fa-circle-stop , .fa-volume-high {
+    transition: 0.3s ease-in-out;
+}
+
+.fa-play:hover , .fa-circle-stop:hover , .fa-volume-high:hover {
+    color: #00CA4E;
+}
+
+.colors{
+    position: absolute;
+    display: flex;
+    top: 25px;
+    gap: 10px;
+}
+
+
+.color-1{
+    color: #FF605C;
+    cursor: pointer;
+}
+
+.color-2{
+    color: #FFBD44;
+    cursor: pointer;
+}
+
+.color-3{
+    color: #00CA4E;
+    cursor: pointeR;
+}
+
+.color-4{
+    color: white;
+    cursor: pointer;
+}
+
+.color-5{
+    color: black;
+    cursor: pointer;
+}
+
